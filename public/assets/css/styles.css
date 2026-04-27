@@ -1,0 +1,26 @@
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; }
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.nav { display: flex; gap: 1rem; flex-wrap: wrap; }
+.nav a.active { color: #b3296c; font-weight: bold; }
+section { padding: 4rem 1rem; min-height: 60vh; }
+.hero { background: linear-gradient(135deg, #ffd4e8, #fff); text-align: center; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.card { border: 1px solid #ddd; border-radius: 12px; padding: 1rem; }
+@media (max-width: 768px) {
+  .nav { display: none; }
+}
